@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+            require_once './Controller/ControllerProfessor.php';            
         ?>
+        <a href="Controller/ControllerProfessor.php">Cadastrar Professor</a>
     </body>
 </html>
