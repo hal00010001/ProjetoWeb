@@ -1,5 +1,7 @@
 <?php
 
+require_once ROOT_PATH.'/PDO/Conexao.php';
+
 class CrudPDO extends Conexao {
     
     //Atributos

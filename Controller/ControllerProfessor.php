@@ -1,6 +1,6 @@
 <?php
 
-include("../PDO/ProfessorPDO.php");
+require_once ROOT_PATH.'/PDO/ProfessorPDO.php';
 
 $crud = new ProfessorPDO();
 

@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            require_once './Controller/ControllerProfessor.php';            
+            define('ROOT_PATH', dirname(__FILE__));
+            require_once ROOT_PATH.'/Controller/ControllerProfessor.php';            
         ?>
         <a href="Controller/ControllerProfessor.php">Cadastrar Professor</a>
     </body>

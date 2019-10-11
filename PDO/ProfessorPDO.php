@@ -1,15 +1,12 @@
 <?php
 
+require_once ROOT_PATH.'/PDO/CrudPDO.php';
+
 class ProfessorPDO extends CrudPDO {
     
     public function insertProfessor($id, $nome, $cpf, $email){
-        $linhasAlteradas = $this->insertDB("Professor", "?, ?, ?, ?", array($id, $nome, $cpf, $email));
-        if(linhasAlteradas > 0){
-            echo "Cadastro realizado com sucesso";
-        }
-        else{
-            echo "Erro no cadastro";
-        }
+        $this->insertDB("Professor", "?, ?, ?, ?", array($id, $nome, $cpf, $email));
+        echo "Cadastro realizado com sucesso";        
     }
     public function selectProfessor(){
         
