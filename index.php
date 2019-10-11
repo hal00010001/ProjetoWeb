@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-            define('ROOT_PATH', dirname(__FILE__));
-            require_once ROOT_PATH.'/Controller/ControllerProfessor.php';            
-        ?>
-        <a href="Controller/ControllerProfessor.php">Cadastrar Professor</a>
-    </body>
-</html>
+<?php include("includes/header.php"); ?>
+<div class="content">
+    <?php
+        define('ROOT_PATH', dirname(__FILE__));
+    ?>
+</div>
+<?php include("includes/footer.php"); ?>
