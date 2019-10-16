@@ -14,8 +14,11 @@ class AlunoPDO {
     public function selectTodosAlunos(){
         $this->selectDB("*", "Aluno", "", array());
     }
+    public function updateAluno(){
+        $this->updateDB("Aluno", "nome = ?, cpf = ?, email = ?, CodigoLogin = ?", "CodigoAluno = ?", array($nome, $cpf, $email, $login, $id));
+    }
     public function deleteAluno(){
-        $this->deleteDB("Aluno", "id = ?", array($id));
+        $this->deleteDB("Aluno", "CodigoAluno = ?", array($id));
     }
     
 }

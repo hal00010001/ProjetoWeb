@@ -9,13 +9,16 @@ class MateriaPDO {
         echo "Cadastro realizado com sucesso";
     }
     public function selectMateria(){
-        $this->selectDB("*", "Materia", "where nome like %$nome%", array());
+        $this->selectDB("*", "Materia", "where Descricao like %$nome%", array());
     }
     public function selectTodasMaterias(){
         $this->selectDB("*", "Materia", "", array());
     }
+    public function updateMateria(){
+        $this->updateDB("Materia", "Descricao = ?", "CodigoMateria = ?", array($materia, $id));
+    }
     public function deleteMateria(){
-        $this->deleteDB("Materia", "id = ?", array($id));
+        $this->deleteDB("Materia", "CodigoMateria = ?", array($id));
     }
     
 }
