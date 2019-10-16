@@ -9,13 +9,13 @@ class AlunoPDO {
         echo "Cadastro realizado com sucesso";
     }
     public function selectAluno(){
-        
+        $this->selectDB("*", "Aluno", "where nome like %$nome%", array());
     }
     public function selectTodosAlunos(){
-        
+        $this->selectDB("*", "Aluno", "", array());
     }
     public function deleteAluno(){
-        
+        $this->deleteDB("Aluno", "id = ?", array($id));
     }
     
 }

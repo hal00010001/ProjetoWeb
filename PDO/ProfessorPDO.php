@@ -9,13 +9,13 @@ class ProfessorPDO extends CrudPDO {
         echo "Cadastro realizado com sucesso";        
     }
     public function selectProfessor(){
-        
+        $this->selectDB("*", "Professor", "where nome like %$nome%", array());        
     }
     public function selectTodosProfessores(){
-        
+        $this->selectDB("*", "Professor", "", array());
     }
     public function deleteProfessor(){
-        
+        $this->deleteDB("Professor", "id = ?", array($id));
     }
     
 }

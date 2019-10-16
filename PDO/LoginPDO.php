@@ -9,10 +9,10 @@ class LoginPDO {
         echo "Login criado com sucesso";
     }
     public function selectLogin(){
-        
+        $this->selectDB("*", "Login", "where nome like %$nome%", array());
     }    
     public function deleteLogin(){
-        
+        $this->deleteDB("Login", "id = ?", array($id));
     }
     
 }
