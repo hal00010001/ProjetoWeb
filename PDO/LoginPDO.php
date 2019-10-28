@@ -10,7 +10,10 @@ class LoginPDO {
     }
     public function selectLogin(){
         $this->selectDB("*", "Login", "where Login like %$nome%", array());
-    }    
+    }
+    public function updatePassword($password, $login){
+        $this->updateDB("Login", "password = ?", "Login = ?", array($nome, $cpf, $email, $login, $id));
+    }
     public function deleteLogin(){
         $this->deleteDB("Login", "CodigoLogin = ?", array($id));
     }
