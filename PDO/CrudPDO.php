@@ -1,6 +1,7 @@
 <?php
 
-require_once ROOT_PATH.'/PDO/Conexao.php';
+//require_once ROOT_PATH.'/PDO/Conexao.php';
+include('../PDO/Conexao.php');
 
 class CrudPDO extends Conexao {
     

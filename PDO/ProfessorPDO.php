@@ -5,7 +5,7 @@ require_once ROOT_PATH.'/PDO/CrudPDO.php';
 class ProfessorPDO extends CrudPDO {
     
     public function insertProfessor($id, $nome, $cpf, $email){
-        $this->insertDB("Professor", "?, ?, ?, ?", array($id, $nome, $cpf, $email));              
+        $this->insertDB("Professor", "?, ?, ?, ?", array($id, $nome, $cpf, $email));        
     }
     public function selectProfessor($nome){
         $this->selectDB("*", "Professor", "where nome like %$nome%", array());        
