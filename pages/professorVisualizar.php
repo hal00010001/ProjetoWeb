@@ -1,6 +1,6 @@
 <?php
 
-include("../includes/header.php");
+include("../includes/headerPages.php");
 include("../PDO/CrudPDO.php");
 
 ?>
@@ -17,8 +17,8 @@ include("../PDO/CrudPDO.php");
     ?>
     <h4>Dados do Professor</h4>
     <hr>
-    <strong>Nome:</strong> <?php echo $fetchs['nome']; ?><br/>
-    <strong>CPF:</strong> <?php echo $fetchs['cpf']; ?><br/>
-    <strong>Email:</strong> <?php echo $fetchs['email']; ?><br/>
+    <strong>Nome:</strong> <?php echo $fetchs['Nome']; ?><br/>
+    <strong>CPF:</strong> <?php echo $fetchs['CPF']; ?><br/>
+    <strong>Email:</strong> <?php echo $fetchs['Email']; ?><br/>
 </div>
 <?php include("../includes/footer.php"); ?>

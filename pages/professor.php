@@ -1,5 +1,5 @@
 <?php 
-    include("../includes/header.php");
+    include("../includes/headerPages.php");
     include("../PDO/CrudPDO.php");
 ?>
 
@@ -9,7 +9,7 @@
                 <table class="tableClass">
                     <thead>
                         <tr>
-                            <th>Nome</th><th>CPF</th><th>Email</th>
+                            <th>Nome</th><th>CPF</th><th>Email</th><th>Fun&ccedil;&otilde;es</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,9 +27,9 @@
                                         <td><?php echo $fetchs['CPF']; ?></td>
                                         <td><?php echo $fetchs['Email']; ?></td>
                                         <td>
-                                            <a href="<?php echo "visualizar.php?id={$fetchs['CodigoProfessor']}"; ?>">Visualizar</a>
-                                            <a href="<?php echo "cadastro.php?id={$fetchs['CodigoProfessor']}"; ?>">Editar</a>
-                                            <a class="deletar" href="<?php echo "Controller/ControllerDeletar.php?id={$fetchs['id']}"; ?>">Deletar</a>
+                                            <a href="<?php echo "professorVisualizar.php?id={$fetchs['CodigoProfessor']}"; ?>">Visualizar</a>
+                                            <a href="<?php echo "professorForm.php?id={$fetchs['CodigoProfessor']}"; ?>">Editar</a>
+                                            <a class="deletar" href="<?php echo "../Controller/ProfessorDeletar.php?id={$fetchs['CodigoProfessor']}"; ?>">Deletar</a>
                                         </td>
                                     </tr>
                                 <?php } ?>

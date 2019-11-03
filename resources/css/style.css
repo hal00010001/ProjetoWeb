@@ -1,56 +1,65 @@
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-		margin-bottom: 0;
-		border-radius: 0;
-		background-color: #555e;
-		color: white;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {
-		height: 450px
-	}
-    
-    .sidenav {
-		padding-top: 20px;
-		background-color: #3113;
-		height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-		background-color: #555;
-		color: white;
-		padding: 15px;
-    }
-    .imgtopo {
-			text-align: center;
-			height: 220px;
-			background: #1582;
-		}
-	.imguser {
-			text-align: center;
-			height: 150px;
-			width: 150px;
-			background: #0222;
-		}
-	footer {
-		background: #4227;
-	}
-	.acesso {
-		position: relative;
-		display: inline-block;
-	}
-	.acesso-content {
-		color: white;
-  		display: none;
-  		position: absolute;
-  		background-color: #555e;
-  		min-width: 160px;
-  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  		padding: 12px 16px;
-  		z-index: 1;
-	    }
-	.acesso:hover .acesso-content {
-	    display: block;
-	}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #555e;
+    color: white;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #3113;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+.imgtopo {
+    text-align: center;
+    height: 220px;
+    background: #1582;
+}
+.imguser {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background: #0222;
+}
+footer {
+    background: #4227;
+}
+.acesso {
+    position: relative;
+    display: inline-block;
+}
+.acesso-content {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: #555e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.acesso:hover .acesso-content {
+    display: block;
+}
+.divPW {
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+}
+        
+        
