@@ -32,11 +32,11 @@
         </div>
         <div class="formularioInput">
             CPF: <br/>            
-            <input type="text" id="cpf" name="cpf" value="<?php echo $cpf; ?>" />
+            <input type="number" id="cpf" name="cpf" value="<?php echo $cpf; ?>" />
         </div>
         <div class="formularioInput">
             Email: <br/>
-            <input type="text" id="email" name="email" value="<?php echo $email ?>" />
+            <input type="email" id="email" name="email" value="<?php echo $email ?>" />
         </div>
         <div class="formularioInput">
             <input type="submit" value="Cadastrar" />

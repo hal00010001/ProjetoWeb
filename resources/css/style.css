@@ -1,9 +1,12 @@
+body {
+    color: black;
+}
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
     background-color: #555e;
-    color: white;
+    color: black;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -19,8 +22,7 @@
 
 /* Set black background color, white text and some padding */
 footer {
-    background-color: #555;
-    color: white;
+    background-color: #555;    
     padding: 15px;
 }
 .imgtopo {
@@ -42,7 +44,6 @@ footer {
     display: inline-block;
 }
 .acesso-content {
-    color: white;
     display: none;
     position: absolute;
     background-color: #555e;
@@ -54,12 +55,20 @@ footer {
 .acesso:hover .acesso-content {
     display: block;
 }
-.divPW {
+#divPW {
     position: absolute;
-    top: 50px;
+    top: 200px;
     width: 400px;
     left: 50%;
     margin-left: -200px;
+    background-color: white;
+}
+#linkNovo {
+    position: relative;
+    top: 400px;
+    width: 200px;
+    left: 70%;
+    background-color: white;
 }
         
         

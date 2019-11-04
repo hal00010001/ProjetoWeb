@@ -15,10 +15,7 @@ and open the template in the editor.
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <div class="imgtopo">
-            <!--<img src="images/banner.jpg" alt="">-->
-        </div>
+    <body>        
         <nav class="nav">
             <li><a href="professor.php">Professor</a></li>
             <li><a href="aluno.php">Aluno</a></li>

@@ -36,6 +36,9 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div id="linkNovo">
+                <a href="professorForm.php">Novo Professor</a>
             </div>            
         </div>        
     <?php include("../includes/footer.php"); ?>
