@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>ARR Idiomas - Aluno</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<style>
+    .navbar {
+		margin-bottom: 0;
+		border-radius: 0;
+		background-color: #000080;
+		color: white;
+    }    
+    .row.content {
+		height: 400px
+	}    
+    .sidenav {
+		padding-top: 20px;
+		background-color: #3113;
+		height: 100%;
+    }    
+    footer {
+		background: #34fe;
+		color: white;
+		padding: 15px;
+    }
+    .imgtopo {
+			text-align: center;
+			background: #6666ff;
+			height: 20%;
+		}
+	.imguser {
+			text-align: center;
+			height: 135px;
+			width: 135px;
+		}
+	.acesso {
+		position: relative;
+		display: inline-block;
+	}
+	.acesso-content {
+		color: white;
+  		display: none;
+  		position: absolute;
+  		background-color: #555e;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		padding: 12px 16px;
+  		z-index: 1;
+	    }
+	.acesso:hover .acesso-content {
+	    display: block;
+	}		
+	</style>
+</head>
+
+<body>
+<!-- Topo -->
+<div class="imgtopo">
+	<img src="topo.jpg" height="200px" width="100%"></img>
+</div>
+<!-- Barra Central -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav" style="font-size:18px">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">
+			<div class="acesso">Acesso Usuários
+				<div class="acesso-content">
+									<p>Secretária</p>
+									<p>Professor</p>
+									<p>Aluno</p>
+								</div></div></a></li>
+		</ul>
+    </div>
+  </div>
+</nav>
+<!-- Principal -->
+<div class="container-fluid text-center img-center">    
+	<div class="row content">
+		<!-- Coluna Lateral -->
+		<div class="col-sm-2 sidenav">
+			<center>
+				<div class="imguser">
+					<img src="alun.png" height="140px" width="100%"></img>
+				</div>
+			</center>	
+				<br>
+				<p><a href="#">Consultar Cadastro</a></p>
+				<p><a href="#">Consultar Notas</a></p>
+				<p><a href="#">Consultar Frequência</a></p>
+		</div>
+		<!-- Coluna Central -->
+		<div class="col-sm-10 text-left"> 
+			<h1>Olá, [nome]!</h1>
+			<p>Você está usando o perfil de <i>Aluno</i>.</p>
+			<br>
+			<p>[conteúdo específico por usuário]</p>
+			<hr>
+			<h3>Avisos</h3>
+			<p>[Avisos quaisquer específicos de cada usuário]</p>
+			
+		</div>
+	</div>
+</div>
+<!-- Rodapé -->
+<footer class="container-fluid text-center">
+	<br>
+	<p style="font-size:10px">Sistema de Escola de Idiomas desenvolvido pelo Grupo ARR.</p>
+</footer>
+
+</body>
+</html>
