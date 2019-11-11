@@ -21,6 +21,5 @@ and open the template in the editor.
             <li><a href="pages/aluno.php">Aluno</a></li>
             <li><a href="pages/materia.php">Materia</a></li>
             <li><a href="pages/turma.php">Turma</a></li>
-            <li><a href="pages/notas.php">Notas</a></li>
-            <li><a href="pages/presenca.php">Presen&ccedil;a</a></li>
+            <li><a href="pages/notas.php">Notas</a></li>            
         </nav>
