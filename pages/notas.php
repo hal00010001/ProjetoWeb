@@ -20,16 +20,16 @@
                     <h1>Olá, [nome]!</h1>
                     <p>Você está usando o perfil de <i>Professor</i>.</p>
                     <br>
-                    <p>[conteúdo específico por usuário]</p>
+                    <!--<p>[conteúdo específico por usuário]</p>
                     <hr>
                     <h3>Avisos</h3>
-                    <p>[Avisos quaisquer específicos de cada usuário]</p>			
+                    <p>[Avisos quaisquer específicos de cada usuário]</p>-->			
 		</div>
                 <div id="divTableNotas">
                 <table class="tableClass">
                     <thead>
                         <tr>
-                            <th>Nome</th><th>Frequ&ecirc;ncia</th><th>Nota</th>
+                            <th>Nome</th><th>Frequ&ecirc;ncia</th><th>Nota</th><th>Fun&ccedil;&otilde;es</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -43,14 +43,14 @@
                                     ?>
 
                                     <tr>
-                                        <td><?php echo $fetchs['al.Nome']; ?></td>
-                                        <td><?php echo $fetchs['av.Presenca']; ?></td>
-                                        <td><?php echo $fetchs['av.Nota']; ?></td>
+                                        <form><td><?php echo $fetchs['Nome']; ?></td>
+                                        <td><input type="text" value="<?php echo $fetchs['Presenca']; ?>" /></td>
+                                        <td><input type="text" value="<?php echo $fetchs['Nota']; ?>" /></td>
                                         <td>
                                             <a href="<?php echo "professorVisualizar.php?id={$fetchs['CodigoProfessor']}"; ?>">Visualizar</a>
                                             <a href="<?php echo "professorForm.php?id={$fetchs['CodigoProfessor']}"; ?>">Editar</a>
                                             <a class="deletar" href="<?php echo "../Controller/ProfessorDeletar.php?id={$fetchs['CodigoProfessor']}"; ?>">Deletar</a>
-                                        </td>
+                                        </td></form>
                                     </tr>
                                 <?php } ?>
                         </tr>
