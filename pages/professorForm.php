@@ -1,3 +1,6 @@
+<?php 
+    include("../includes/headerPages.php");    
+?>
 <?php
     
     include("../PDO/CrudPDO.php");
@@ -43,3 +46,4 @@
         </div>
     </form>        
 </div>
+<?php include("../includes/footer.php"); ?>

@@ -3,8 +3,8 @@
     include("../PDO/CrudPDO.php");
 ?>
 
-        <h2>Professor</h2>
         <div id="divPW">
+            <p><a id="linkNovo" href="professorForm.php">Incluir Novo Professor</a></p>
             <div id="divTable">
                 <table class="tableClass">
                     <thead>
@@ -36,9 +36,8 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <div id="linkNovo">
-                <a href="professorForm.php">Novo Professor</a>
-            </div>            
+                
+                                                
+            </div>                       
         </div>        
     <?php include("../includes/footer.php"); ?>
